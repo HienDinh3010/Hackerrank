@@ -17,11 +17,19 @@ import java.util.Scanner;
  */
 public class StdInAndStdOut {
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);		
+/*		Scanner scan = new Scanner(System.in);		
 		while (scan.hasNextInt()) {
 			int i = scan.nextInt();
 			System.out.println(i);
 		}
-		scan.close();
+		scan.close();*/
+		int[] a = new int[2];
+		a[0] = 1;
+		a[1] = 4;
+		int[] b = new int[2];
+		a=b;
+		for (int i=0; i < 2; i++) {
+			System.out.println(b[i]);
+		}
 	}
 }
